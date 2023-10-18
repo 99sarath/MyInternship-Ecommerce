@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="index.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+</head>
+
+<body>
+   <nav class="navbar">
+    <div class="logo">
+        <box-icon type='logo' name='shopify'></box-icon>
+        <h3>Shopify</h3>
+    </div>
+       
+    <ul class="menu">
+        <li><a href="#">Home</a></li>
+        <li>
+        <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn">Categories</button>
+        <div id="myDropdown" class="dropdown-content">
+         <a href="#Mens">Mens</a>
+         <a href="#womens">Womens</a>
+         <a href="#kids">Kids</a>
+        </div>
+        </div>
+        </li>
+        <li><a href="#footer">About</a></li>
+        <li><a href="#footer">Contact</a></li>
+        <li><button onclick="opencart()"><box-icon name='shopping-bag'></box-icon><span class="quantity">0</span></button></li>
+    </ul>
+</nav>
+<div id="sidebar" class="sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="closecart()">×</a>
+    <div id="cartcontent" class="cartcontent">
+
+    </div>
+</div>
+<section id="Mens">
+    <div class="vl">
+        <h2 class="movies">MensWear</h2>
+        <i class="fa-solid fa-angle-right" style="color:green"></i>
+    </div>
+    <div class="wear">
+        <div class="card">
+            <img src="https://cdn.pixabay.com/photo/2016/12/06/09/31/blank-1886008_640.png"/>
+            <h5>Tshirt</h5>
+            <div class="card-content">
+            <p>T-shirts are a good marketing tool because people wear them for many months</p>
+            <button id="addbutton" class="addbutton"><box-icon type='solid' name='cart-add'></box-icon></button>
+            <button><box-icon name='heart'></box-icon></button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://m.media-amazon.com/images/I/71MaGTXl7ML._UY741_.jpg"/>
+            <h5>Casual shirt</h5>
+            <div class="card-content">
+            <p> Crafted from high-quality,breathable fabric</p>
+            <button id="addbutton" class="addbutton"><box-icon type='solid' name='cart-add'></box-icon></button>
+            <button><box-icon name='heart'></box-icon></button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpKcButxtW3qenx8g-ye_BNRkBVALzl9Qr0A&usqp=CAU"/>
+            <h5>Jeans pant</h5>
+            <div class="card-content">
+            <p> Our jeans are made from high-quality denim that's both durable and soft, ensuring long-lasting wear and comfort.</p>
+            <button id="addbutton" class="addbutton"><box-icon type='solid' name='cart-add'></box-icon></button>
+            <button><box-icon name='heart'></box-icon></button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiuRpuqEUorSVgNzOlFQ3XtQhqoLsYllsfehtsWO7PFvaSMEvTcK97FwBv1hgmhj14wg8&usqp=CAU"/>
+            <h5>Shorts</h5>
+            <div class="card-content">
+            <p> Our shorts are made from lightweight and breathable materials.</p>
+            <button id="addbutton" class="addbutton"><box-icon type='solid' name='cart-add'></box-icon></button>
+            <button><box-icon name='heart'></box-icon></button>
+            </div>
+        </div>
+    </div>
+    <div class="vl">
+        <h2 class="movies">Mens Acessories</h2>
+        <i class="fa-solid fa-angle-right" style="color:green"></i>
+    </div>
+    <div class="wear">
+        <div class="card">
+            <img src="https://m.media-amazon.com/images/I/61E3UO6e4NL._AC_UY1000_.jpg">
+            <h5>Watch</h5>
+            <div class="card-content">
+            <p>watches are a good marketing tool because people wear them for many uses</p>
+            <button id="addbutton" class="addbutton"><box-icon type='solid' name='cart-add'></box-icon></button>
+            <button><box-icon name='heart'></box-icon></button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/29abad8d7ae64654b001adb90136819e_9366/RUNMAGICA_SHOES_Blue_EY2972_01_standard.jpg"/>
+            <h5>Shoes</h5>
+            <div class="card-content">
+            <p> Crafted from high-quality,breathable Materials</p>
+            <button id="addbutton" class="addbutton"><box-icon type='solid' name='cart-add'></box-icon></button>
+            <button><box-icon name='heart'></box-icon></button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://cdn.anscommerce.com/image/tr:e-sharpen-01,h-822,w-940,cm-pad_resize/data/khadims/30May2020/61500261531-(1).JPG"/>
+            <h5>Sandals</h5>
+            <div class="card-content">
+            <p> The Sandals are made from high-quality Leather, ensuring long-lasting wear and comfort.</p>
+            <button id="addbutton" class="addbutton"><box-icon type='solid' name='cart-add'></box-icon></button>
+            <button><box-icon name='heart'></box-icon></button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://m.media-amazon.com/images/I/714LYfFmG+L._AC_UY1100_.jpg"/>
+            <h5>Belt</h5>
+            <div class="card-content">
+            <p> The belt is made from Leather and breathable materials.</p>
+            <button id="addbutton" class="addbutton"><box-icon type='solid' name='cart-add'></box-icon></button>
+            <button><box-icon name='heart'></box-icon></button>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="womens">
+    <div class="vl">
+        <h2 class="movies">WomensWear</h2>
+        <i class="fa-solid fa-angle-right" style="color:green"></i>
+    </div>
+    <div class="wear">
+        <div class="card">
+            <img src="https://media.istockphoto.com/id/93355119/photo/indian-saris.jpg?s=612x612&w=0&k=20&c=afmfiTJg0VAmIY6P_TJ_JYsTfGhUdevv18WXQRUZ8NQ="/>
+            <h5>Saree</h5>
+            <div class="card-content">
+            <p>Sarees are a good marketing tool because people wear them for many months</p>
+            <button id="addbutton" class="addbutton"><box-icon type='solid' name='cart-add'></box-icon></button>
+            <button><box-icon name='heart'></box-icon></button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://images.meesho.com/images/products/84361492/gzolu_512.webp"/>
+            <h5>Kurta</h5>
+            <div class="card-content">
+            <p> Crafted from high-quality,breathable fabric</p>
+            <button id="addbutton" class="addbutton"><box-icon type='solid' name='cart-add'></box-icon></button>
+            <button><box-icon name='heart'></box-icon></button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://image.made-in-china.com/2f0j00YQucPDajvpon/New-Fashion-Women-Short-T-Shirt-Cotton-Cropped-Tops-Women-s-Casual-Crop-Girls-Tops-Summer-Loose-Tops-T-Shirt.webp"/>
+            <h5>Tops</h5>
+            <div class="card-content">
+            <p> Our Tops made from high-quality material that's both durable and soft, ensuring long-lasting wear and comfort.</p>
+            <button id="addbutton" class="addbutton"><box-icon type='solid' name='cart-add'></box-icon></button>
+            <button><box-icon name='heart'></box-icon></button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://media.istockphoto.com/id/530825559/photo/two-folded-yoga-pants.jpg?s=612x612&w=0&k=20&c=nzztDPQIX-W-2U64scQMJ3WdQzil2h5QZoMUyvd1hak=">
+            <h5>Leggins</h5>
+            <div class="card-content">
+            <p> Our leggins are made from lightweight and breathable materials.</p>
+            <button id="addbutton" class="addbutton"><box-icon type='solid' name='cart-add'></box-icon></button>
+            <button><box-icon name='heart'></box-icon></button>
+            </div>
+        </div>
+    </div>
+    <div class="vl">
+        <h2 class="movies">Womens Acessories</h2>
+        <i class="fa-solid fa-angle-right" style="color:green"></i>
+    </div>
+    <div class="wear">
+        <div class="card">
+            <img src="https://m.media-amazon.com/images/I/71mR1c5l70L._AC_UY350_.jpg">
+            <h5>Watch</h5>
+            <div class="card-content">
+            <p>watches are a good marketing tool because people wear them for many uses</p>
+            <button id="addbutton" class="addbutton"><box-icon type='solid' name='cart-add'></box-icon></button>
+            <button><box-icon name='heart'></box-icon></button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://img.freepik.com/free-photo/beautiful-elegance-luxury-fashion-pink-women-handbag_1203-7653.jpg?size=626&ext=jpg&ga=GA1.2.1883127160.1696982400&semt=ais"/>
+            <h5>Handbags</h5>
+            <div class="card-content">
+            <p> Crafted from high-quality,breathable Materials</p>
+            <button id="addbutton" class="addbutton"><box-icon type='solid' name='cart-add'></box-icon></button>
+            <button><box-icon name='heart'></box-icon></button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://m.media-amazon.com/images/I/41gUlTquqNL.jpg"/>
+            <h5>Sandals</h5>
+            <div class="card-content">
+            <p> The Sandals are made from high-quality Leather, ensuring long-lasting wear and comfort.</p>
+            <button id="addbutton" class="addbutton"><box-icon type='solid' name='cart-add'></box-icon></button>
+            <button><box-icon name='heart'></box-icon></button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/10662144/2023/2/10/94454678-f8fe-48a4-852f-09f1889ef7101676023376793-Rubans-Women-Gold-Plated-Handcrafted-Jewellery-Set-921676023-7.jpg"/>
+            <h5>Jewellery</h5>
+            <div class="card-content">
+            <p> The jewellery is made from breathable materials.</p>
+            <button id="addbutton" class="addbutton"><box-icon type='solid' name='cart-add'></box-icon></button>
+            <button><box-icon name='heart'></box-icon></button>
+            </div>
+        </div>
+    </div>
+
+
+</section>
+<section id="kids">
+    <div class="vl">
+        <h2 class="movies">Kids</h2>
+        <i class="fa-solid fa-angle-right" style="color:green"></i>
+    </div>
+    <div class="wear">
+        <div class="card">
+            <img src="https://images.meesho.com/images/products/191008412/php5l_512.webp"/>
+            <h5>BabyBoy dress</h5>
+            <div class="card-content">
+            <p>Dress are a good marketing tool because people wear them for many months</p>
+            <button id="addbutton" class="addbutton"><box-icon type='solid' name='cart-add'></box-icon></button>
+            <button><box-icon name='heart'></box-icon></button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://m.media-amazon.com/images/I/71LyNYTjkHS._AC_UY1100_.jpg"/>
+            <h5>BabyGirl dress</h5>
+            <div class="card-content">
+            <p> Crafted from high-quality,breathable fabric</p>
+            <button id="addbutton" class="addbutton"><box-icon type='solid' name='cart-add'></box-icon></button>
+            <button><box-icon name='heart'></box-icon></button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://m.media-amazon.com/images/I/61HkxdsBSXL._AC_UY1000_.jpg"/>
+            <h5>Kids shoes</h5>
+            <div class="card-content">
+            <p> Our shoes are made from high-quality Leather that's both durable and soft, ensuring long-lasting wear and comfort.</p>
+            <button id="addbutton" class="addbutton"><box-icon type='solid' name='cart-add'></box-icon></button>
+            <button><box-icon name='heart'></box-icon></button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://assets.ajio.com/medias/sys_master/root/20211006/oRdN/615de4b4f997ddce890463aa/-1117Wx1400H-4923367980-multi-MODEL.jpg">
+            <h5>Toys</h5>
+            <div class="card-content">
+            <p> Our toys are made from plastic and breathable materials.</p>
+            <button id="addbutton" class="addbutton"><box-icon type='solid' name='cart-add'></box-icon></button>
+            <button><box-icon name='heart'></box-icon></button>
+            </div>
+        </div>
+    </div>
+    
+    
+</section>
+<footer id="footer">
+    <div class="aboutwebsite">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Shopify_logo_2018.svg/2560px-Shopify_logo_2018.svg.png">
+    <p>Shopify is E-commerce Website.It will help people to buy required items.</p>
+   </div>
+   <div class="center">
+    <div class="downloadbuttons">
+        <img src="https://static.vecteezy.com/system/resources/previews/012/871/365/original/google-play-store-download-button-in-black-colors-download-on-the-google-play-store-free-png.png">
+        <img src="https://static.vecteezy.com/system/resources/previews/012/871/374/non_2x/app-store-download-button-in-white-colors-download-on-the-apple-app-store-free-png.png">
+    </div>
+    <div class="copyright-text">
+        <p>Copyright &copy; 2023, All Right Reserved</p>
+    </div>
+</div>
+   
+    <div class="footer-center">
+
+        <div>
+            <i class="fa-solid fa-location-dot"></i>
+            <p><span>surat</span> Gujarat,India</p>
+        </div>
+
+        <div>
+            <i class="fa fa-phone"></i>
+            <p>999895450</p>
+        </div>
+
+        <div>
+            <i class="fa fa-envelope"></i>
+            <p><a href="mailto:support@company.com">shopify@company.com</a></p>
+        </div>
+ </div>
+
+ </footer>
+ 
+
+        
+</body>
+</html>
